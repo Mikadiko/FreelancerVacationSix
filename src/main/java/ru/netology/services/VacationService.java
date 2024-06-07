@@ -10,9 +10,8 @@ public class VacationService {
 
 
             if (money >= threshold) { // отдыхаем
-                int expensesTwo = (money - expenses) - (money - expenses) / 3; //сколько еще потратилось
+                money = (money - expenses) / 3;
                 count++; //увеличиваем счётчик месяцев отдыха
-                money = money - (expensesTwo + expenses);
 
             } else {
                 money = income + money - expenses;
